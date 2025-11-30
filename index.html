@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="./estilos/media-queries.css">
 
     <!-- Ícones do Google -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" /> -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=passwordaccount_circle" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <title>Tela de Login</title>
 </head>
@@ -21,30 +20,29 @@
         <section>
             <div id="imagem"></div>
             
-            <div id="formulario">
+            <div id="login">
                 <h1>Login</h1>
 
-                <p>Seja bem-vindo(a)! Faça o logn para acessar sua conta.</p>
+                <p>Seja bem-vindo(a)! Faça seu login para acessar sua conta.</p>
 
                 <form action="#" method="post">
-                    <fieldset>
-                        <legend>Insira seus dados</legend>
-
+                    <div>
                         <label for="usuario">
-                            <span class="material-symbols-outlined">account_circle</span>
+                            <span class="material-symbols-outlined">person</span>
                         </label>
-                        <input type="text" id="usuario" name="usuario" required placeholder="Insira seu nome">
+                        <input type="email" id="usuario" name="usuario" required autocomplete="email" placeholder="Insira seu e-mail">
+                    </div>
 
+                    <div>
                         <label for="senha">
                             <span class="material-symbols-outlined">password</span>
                         </label>
-                        <input type="password" id="senha" name="senha" required placeholder="Insira sua senha">
-                    </fieldset>
-
-                    <div id="botoes">
-                        <button type="submit">Entrar</button>
-                        <button type="reset">Limpar</button>
+                        <input type="password" id="senha" name="senha" required autocomplete="current-password" minlength="8" maxlength="15" placeholder="Insira sua senha">
                     </div>
+
+                    <a href="#">Esqueci Minha Senha</a>
+                    
+                    <button type="submit">Entrar</button>
                 </form>
             </div>
         </section>

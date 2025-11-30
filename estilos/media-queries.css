@@ -7,27 +7,29 @@
         background-image: linear-gradient(to bottom, var(--lilás), var(--verde)) ;
     }
 
-    main section {
+    section {
         flex-direction: row;
-        width: 90%;
     }
 
-    main section > div {
+    section > div#imagem, div#login {
         height: 100%;
     }
 
-    main section #imagem {
-        border-radius: 15px 0 0 15px;
+    div#login form {
+        height: 50%;
+    }
+
+    div#login button {
+        width: 80%;
     }
 }
 
-@media screen and (min-width: 992px){
-
-    main section {
+@media screen and (min-width: 992px) {
+    section {
         flex-direction: row-reverse;
     }
 
-    main section #imagem {
-        border-radius: 0 15px 15px 0;
+    div#login button {
+        width: 50%;
     }
 }
