@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 769px), (orientation: landscape) {
     main {
-        background-image: linear-gradient(to bottom, var(--lilás), var(--verde)) ;
+        background-image: linear-gradient(to bottom, var(--lilás), var(--verde));
     }
 
     section {
