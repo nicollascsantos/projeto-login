@@ -88,9 +88,11 @@ div#login form > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     width: inherit;
-    margin-bottom: 5px;
+    background-color: var(--lilás);
+    color: #fff;
+    padding: 5px;
 }
 
 div#login form input {
