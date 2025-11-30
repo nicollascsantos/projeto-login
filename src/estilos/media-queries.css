@@ -2,19 +2,17 @@
 
 @charset "UTF-8";
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     main section {
-        width: 90vw
+        width: 90vw;
+        flex-direction: row;
     }
 
     main section div {
-        display: inline-block;
-        border: 2px solid red;
-        width: calc(50% - 10px);
-        height: calc(100% - 20px);
+        height: 100%;
     }
 
     main section #imagem {
-        height: 60%;
+        border-radius: 15px 0 0 15px;
     }
 }

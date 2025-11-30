@@ -33,19 +33,37 @@ main {
 
 main section {
     background-color: var(--branco);
-    width: 250px;
-    height: 500px;
+    width: 65%;
+    height: 530px;
+    padding: 10px;
+    border-radius: 20px;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px;
-    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main section div {
+    height: 50%;
+    width: 100%;
 }
 
 main section #imagem {
     background: #000 url(../assets/imagens/padrao.jpg) no-repeat center fixed;
     background-size: cover;
-    height: 50%;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Configurações do Formulário */
+
+main section #formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid blue;
 }
