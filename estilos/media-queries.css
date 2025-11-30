@@ -11,7 +11,11 @@
         flex-direction: row;
     }
 
-    section > div#imagem, div#login {
+    section div#imagem {
+        border-radius: 15x 0 0 15px;
+    }
+
+    section div#imagem, div#login {
         height: 100%;
     }
 
@@ -27,6 +31,10 @@
 @media screen and (min-width: 992px) {
     section {
         flex-direction: row-reverse;
+    }
+
+    section div#imagem {
+        border-radius: 0 15px 15px 0;
     }
 
     div#login button {
