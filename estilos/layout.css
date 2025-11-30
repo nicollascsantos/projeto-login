@@ -2,9 +2,9 @@
 
 /* Paleta de Cores */
 :root {
-    --verde: #49a09d;
+    --verde: #55b0ad;
+    --verde-escuro: #1e4241;
     --lilás: #5f2c82;
-    --branco: #ffffff;
 }
 
 @meta charset "UTF-8";
@@ -32,9 +32,9 @@ main {
 }
 
 main section {
-    background-color: var(--branco);
-    width: 90%;
-    height: 80%;
+    background-color: #fff;
+    width: 80%;
+    height: 90%;
     padding: 10px;
     border-radius: 20px;
 
@@ -45,15 +45,17 @@ main section {
     
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+
+    transition: all 0.3s ease-in-out;
 }
 
-main section div {
+main section > div {
     height: 50%;
     width: 100%;
 }
 
-main section #imagem {
+main section div#imagem {
     background: #000 url(../imagens/padrao.jpg) no-repeat center fixed;
     background-size: cover;
     border-radius: 15px 15px 0 0;
@@ -61,8 +63,37 @@ main section #imagem {
 
 /* Configurações do Formulário */
 
-main section #formulario {
+main section div#formulario {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+main section div#botoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+main button {
+    padding: 8px 30px;
+    border: 2px solid var(--verde);
+    border-radius: 5px;
+    background-color: var(--verde);
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 0 5px var(--verde-escuro);
+}
+
+main button:hover {
+    background-color: var(--verde-escuro);
+}
+
+main button:active {
+    background-color: #fff;
+    color: var(--verde);
+    border-color: var(--verde);
+    transform: scale(0.9);
 }
