@@ -54,7 +54,7 @@ main section div {
 }
 
 main section #imagem {
-    background: #000 url(../assets/imagens/padrao.jpg) no-repeat center fixed;
+    background: #000 url(../imagens/padrao.jpg) no-repeat center fixed;
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
