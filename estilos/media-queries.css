@@ -44,7 +44,7 @@
 
 @media screen and (max-height: 380px) {
     main  {
-        height: 180dvh;
+        height: 150dvh;
     }
 
     section {
