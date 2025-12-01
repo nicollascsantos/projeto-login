@@ -43,8 +43,19 @@
 }
 
 @media screen and (max-height: 380px) {
+    main  {
+        height: 180dvh;
+    }
+
     section {
-        height: 360px;
-        transform: scale(0.9);
+        height: 340px;
+    }
+
+    section div#login h1, p {
+        transform: scale(0.75);
+    }
+
+    section div#login form {
+        height: 60%;
     }
 }
