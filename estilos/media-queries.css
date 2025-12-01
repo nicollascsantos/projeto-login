@@ -2,7 +2,7 @@
 
 @charset "UTF-8";
 
-@media screen and (min-width: 769px) and (min-height: 300px), (orientation: landscape) {
+@media screen and (min-width: 769px), (orientation: landscape) {
     main {
         background-image: linear-gradient(to bottom, var(--lilás), var(--verde));
     }
@@ -43,7 +43,8 @@
 }
 
 @media screen and (max-height: 380px) {
-    section div#login > * {
-        transform: scale(0.85);
+    section {
+        height: 360px;
+        transform: scale(0.9);
     }
 }
