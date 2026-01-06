@@ -79,7 +79,7 @@ div#login form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0px;
+    gap: 0.4rem;
     align-items: center;
 }
 

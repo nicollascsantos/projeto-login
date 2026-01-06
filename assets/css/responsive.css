@@ -1,8 +1,7 @@
 /* Media Queries */
-
 @charset "UTF-8";
 
-@media screen and (min-width: 769px), (orientation: landscape) {
+@media screen and (min-width: 769px){
     main {
         background-image: linear-gradient(to bottom, var(--lilás), var(--verde));
     }
