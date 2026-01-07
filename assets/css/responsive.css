@@ -41,13 +41,9 @@
     }
 }
 
-@media screen and (height <= 500px) {
-    main  {
-        max-height: 250dvh;
-    }
-
-    section {
-        height: 340px;
+@media (height <= 500px) {
+    body  {
+        height: 280dvh;
     }
 
     section div#login h1, p {
