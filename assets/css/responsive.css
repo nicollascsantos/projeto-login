@@ -41,9 +41,9 @@
     }
 }
 
-@media screen and (max-height: 380px) {
+@media screen and (height <= 380px) or (orientation: landscape) {
     main  {
-        height: 150dvh;
+        max-height: 250dvh;
     }
 
     section {
