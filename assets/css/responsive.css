@@ -41,7 +41,7 @@
     }
 }
 
-@media screen and (height <= 380px) {
+@media screen and (height <= 500px) {
     main  {
         max-height: 250dvh;
     }
